@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    font-family: "Smythe", system-ui;
+} 
+#container{
+    max-width: 480px;
+    margin: 0 auto;
+}
+header{
+    background: no-repeat url("./banner.png");
+    background-size: 480px;
+    height: 120px;
+    padding: 25px 0 0 30px;
+    display: block;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    width: 480px;
+    z-index: 1;
+    
+
+    
+}
+.header-style{
+    color: white;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+h2{
+    font-size: 18px;
+}
+#items{
+    margin-top: 130px;
+}
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 420px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 20px 0;
+    border-bottom: 1px solid #D2D2D2;
+    position: relative;
+   
+}
+
+.item-logo{
+    font-size: 60px;
+}
+.item-info{
+   position: absolute; 
+   left: 80px;
+   
+   
+}
+.price, .item-name, .ingredients, 
+.total-style, #total-price,
+.amount{
+     margin:0;
+     font-weight: 200;
+}
+.price, #total-price{
+    font-size: 17px;
+}
+.item-name, #total-style
+{
+    font-size: 24px;
+   
+}
+.amount{
+    margin-left: 5px;
+    font-size: 20px;
+    border: 1px solid #DEDEDE;
+    height: 27px;
+    width:27px;
+    text-align: center;
+    padding:5px;
+    
+    border-radius: 50%;
+}
+.ingredients{
+    color: #8B8B8B;
+    font-size: 14px;
+    margin: 5px 0;
+}
+.add-item{
+     border-radius: 50%;
+     border: 1px solid #DEDEDE;
+     background: white;
+     font-family: "Inter", sans-serif;
+     font-weight: 100;
+     font-size: 28px;
+     position: absolute;
+     top: 35px;
+     right: 0;
+     padding: 9px 10px 11px 10px;;
+     width: 40px;
+     height: 40px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     
+}
+#your-order, #thanks-msg{
+    display:none;
+    padding-top: 35px;
+    width: 420px;
+    margin: 0 auto;
+}
+#thanks-msg{
+    display: none;
+    padding-top: 0;
+    margin-top: 35px;
+    background: #ECFDF5;
+    text-align: center;
+    padding: 10px 0;
+}
+#thank-user{
+    font-size: 28px;
+    font-weight: 400;
+    
+    color: #065F46;
+
+}
+#order-title{
+     font-size: 24px;
+     text-align: center;
+     margin: 0;
+     
+}
+#items-in-cart{
+    padding: 30px 0 20px;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;   
+}
+.ordered-item{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding-bottom: 3px;
+
+    
+}
+.added-container{
+    display: flex;
+    align-items: center;
+    
+}
+.remove-btn{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    background: white;
+    font-size: 10px;
+    color: #BBBBBB;
+    margin-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 0;
+}
+
+.remove-btn:hover{
+    cursor: pointer;
+    color: #cc0000;
+}
+.remove-btn:focus{
+    outline: none;
+    color: #cc0000;
+}
+#total-container{
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+}
+#checkout-btn, #submit-form{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    border: none;
+    color: white;
+    background: #16DB99;
+    padding: 20px;
+    width: 420px;
+    display: block;
+    margin: 30px 0;
+    
+}
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 420px;
+    max-height: 350px;
+    margin: auto;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0px 0px 80px 5px #757575;
+    padding-bottom: 25px;
+    
+}
+.modal-inner{
+    width: 370px;
+    margin: 0 auto;
+}
+#modal-title{
+    margin: 30px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input{
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+#submit-form{
+    width: 100%;
+    
+    
+}
